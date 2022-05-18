@@ -16,7 +16,7 @@ data.forEach(SomarQuadrados(x)) // vai aplicar foreach para cada elemento do arr
 // ----> array.join() -> transforma um array em uma string, e concatena todos os elementos, o elemento dentro de join
 // irá definir o elemento separador dos elementos, exemplo:
 var conc = array1.join("-")
-console.log(conc) // retorna "banana-maça"
+console.log(conc) // retorna "ba-nana-maça"
 var conc2 = array2.join("") // retorna "bananamaça"
 // se não for colocado nada dentro do join, será usado a vírgula para separar;
 // -----> array.reverse() , irá reverter a ordem dos elementos do array
@@ -36,3 +36,15 @@ var b = [1,2,3,4,5,6,7,8,9]
 // -----> array.push() -> adiciona elementos no final do array
 // ----->array.unshift() ->adiciona elementos no começo do array
 // ------> array.shift()---> exclui o primeiro elemento do array
+// array.ToString() -> transforma o array em uma string simples
+
+//every() e some()
+//são predicados de um array, retornam true ou false
+//array.every() é o quantificador matemático "para todo" ele retorna true , se e somente se , sua função de predicado retornar true para todos os elementos do array
+//array.some() -> quantificador matemático "existe" ele retorna true se existir pelo menos 1 elemento que satisifaça a função de predicado,e retorna false, se e somente se, o todos os elementos retornarem false
+//array vazio -> every retorna true e some retorna false
+
+//indexOf() e lastIndexOf()
+const array6 = [1,2,3,2,5]
+array6.indexOf(1) // retorna 0, já que o index do elemento 1 da esquerda pra direita é 0
+array6.lastIndexOf(2) // retorna 3, já que o index do elemento 2 da direita pra esquerda é 3
